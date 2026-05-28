@@ -26,14 +26,9 @@ button.addEventListener("click", () => {
 
         btnState = true;
     } else {
-        // Deuxième clic → Redirection
-        console.log("🔄 Redirection vers ../biscuit.html...");
-        
-        // Attendre la fin de l'animation pour éviter le conflit navigateur + animation
-        setTimeout(() => {
-            window.location.href = "../biscuit.html";
-            btnState = false; // Reset après navigation
-        }, 1500); // Attend 1.5s (durée de votre transition CSS)
+
+        window.location.href = "../biscuit.html";
+        btnState = false; // Reset après navigation
     }
 });
 

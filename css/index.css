@@ -23,10 +23,18 @@ body {
     background-size: 8%;
     background-position: center;
     overflow: hidden;
-    backdrop-filter: grayscale(100%) blur(3px);
 
-    &.active {
-        backdrop-filter: grayscale(0%) blur(0px);
+    .background-effect {
+        width: 100vw;
+        height: 100vh;
+        backdrop-filter: grayscale(100%) blur(3px);
+        position: absolute;
+        overflow: hidden;
+        transition: transform 1s ease-in;   
+
+        &.active{
+            transform: translateY(-100%);
+        }
     }
 }
 
@@ -36,15 +44,22 @@ main {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    overflow: hidden;
+    font-family: "Google Sans", sans-serif;
+
 
     h1 {
         color: #000;
         z-index: 9999;
         font-size: 8rem;
         display: inline-block;
-        font-family: "Google Sans", sans-serif;
+        margin-top: 40vh;
+        transition: transform 1.5s ease-in;   
+             
+        &.active{
+            transform: translateY(-100vh);
+        }
     }
 
     i {
@@ -55,6 +70,23 @@ main {
         position: absolute;
         bottom: 100px;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) rotate(0deg);
+        transition: all 1s ease-in-out;   
+             
+        &.active{
+            transform: rotate(180deg) translateX(50%);
+        }
+    }
+
+    p {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: -20vh;
+        color: rgba(0, 0, 0, 0.0);
+        transition: all 1.2s ease;
+
+        &.active {
+            color: rgba(0, 0, 0, 1);
+        }
     }
 }

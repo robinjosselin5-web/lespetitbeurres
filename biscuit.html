@@ -8,37 +8,38 @@
             document.head.innerHTML += head;
         </script>
 </head>
-<body id="biscuitbody">
-    <div class="landscape"></div>
+    <body>
 
-    <script type="module">
-        import { landscape } from '/modules/landscape.js';
+        <div class="landscape"></div>
+        <script type="module">
+            import { landscape } from '/modules/landscape.js';
 
-        document.querySelector('.landscape').innerHTML = landscape;
-    </script>
+            document.querySelector('.landscape').innerHTML = landscape;
+        </script>
 
-    <header>
-        <nav>
-            Logo - List
-        </nav>
-    </header>
+            <header>
+                <nav>
+                    Logo - List
+                </nav>
+            </header>
+            <div id="biscuitall">  
+            <main>
+                <section>
+                    <img src="img/biscuit/biscuit-shadow.png" alt="PetitLU" class="biscuit">
+                    <a class="theme1" href="themes/theme1/theme1.html">1</a>
+                    <a class="theme2" href="themes/theme2/theme2.html">2</a>
+                    <a class="theme3" href="themes/theme3/theme3.html">3</a>
+                    <a class="theme4" href="themes/theme4/theme4.html">4</a>
+                </section>
+            </main>
+            <footer></footer>
 
-    <main>
-        <section>
-            <img src="img/biscuit/biscuit-shadow.png" alt="PetitLU" class="biscuit">
-             <a class="theme1" href="themes\theme1\theme1.html">1</a>
-             <a class="theme2" href="themes\theme2\theme2.html">2</a>
-             <a class="theme3" href="themes\theme3\theme3.html">3</a>
-             <a class="theme4" href="themes\theme4\theme4.html">4</a>
-    </section>
-</main>
-<footer></footer>
+            <script type="module">
+                import { footer } from '/modules/footer.js';
 
-<script type="module">
-    import { footer } from '/modules/footer.js';
-
-    document.querySelector('footer').innerHTML = footer;
-</script>
-</body>
+                document.querySelector('footer').innerHTML = footer;
+            </script>
+        </div>
+    </body>
 </html>
 

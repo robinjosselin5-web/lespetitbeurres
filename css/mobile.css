@@ -1,0 +1,20 @@
+@media (max-width : 900px) {
+
+    #index {
+        main {
+            h1 {
+                font-size: 4rem;
+            }
+
+            span.bounce {
+                bottom: 1px;
+            }
+
+            p {
+                font-size: 2rem;
+                text-align: center;
+                margin-top: -30vh;
+            }
+        }
+    }    
+}

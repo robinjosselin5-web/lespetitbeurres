@@ -37,7 +37,8 @@
             font-size: 8rem;
             display: inline-block;
             margin-top: 40vh;
-            transition: transform 1.5s ease-in;   
+            transition: transform 1.5s ease-in;
+            text-align: center;   
                 
             &.active{
                 transform: translateY(-100vh);

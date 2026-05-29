@@ -8,14 +8,14 @@
             document.head.innerHTML += head;
         </script>
 </head>
-<body>
+<body id="biscuitbody">
     <div class="landscape"></div>
 
     <script type="module">
-    import { landscape } from '/modules/landscape.js';
+        import { landscape } from '/modules/landscape.js';
 
-    document.querySelector('landscape').innerHTML = footer;
-</script>
+        document.querySelector('.landscape').innerHTML = landscape;
+    </script>
 
     <header>
         <nav>

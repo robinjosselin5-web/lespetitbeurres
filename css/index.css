@@ -1,4 +1,5 @@
-body {
+#index {
+    
     width: 100vw;
     height: 100vh;
     background-image: url('../img/bg.png');
@@ -18,70 +19,70 @@ body {
             transform: translateY(-100%);
         }
     }
-}
-
-main {
-    background: rgba(0, 0, 0, 0.2);
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    font-family: "Google Sans", sans-serif;
+    main {
+        background: rgba(0, 0, 0, 0.2);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        font-family: "Google Sans", sans-serif;
 
 
-    h1 {
-        color: #000;
-        z-index: 9999;
-        font-size: 8rem;
-        display: inline-block;
-        margin-top: 40vh;
-        transition: transform 1.5s ease-in;   
-             
-        &.active{
-            transform: translateY(-100vh);
+        h1 {
+            color: #000;
+            z-index: 9999;
+            font-size: 8rem;
+            display: inline-block;
+            margin-top: 40vh;
+            transition: transform 1.5s ease-in;   
+                
+            &.active{
+                transform: translateY(-100vh);
+            }
+        }
+
+        span.bounce {
+            display: inline-block;
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s ease infinite;
+        }
+
+        button {
+            box-shadow: none;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        i {
+            color: #000;
+            font-size: 6rem;
+            display: block;
+            transition: all 1s ease-in-out;
+
+            &.active {
+                transform: rotate(180deg);
+            }
+        }
+
+        p {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: -20vh;
+            color: rgba(0, 0, 0, 0.0);
+            transition: all 1.2s ease;
+
+            &.active {
+                color: rgba(0, 0, 0, 1);
+            }
         }
     }
 
-    span.bounce {
-        display: inline-block;
-        position: absolute;
-        bottom: 100px;
-        left: 50%;
-        transform: translateX(-50%);
-        animation: bounce 2s ease infinite;
-    }
-
-    button {
-        box-shadow: none;
-        border: none;
-        background: none;
-        cursor: pointer;
-    }
-
-    i {
-        color: #000;
-        font-size: 6rem;
-        display: block;
-        transition: all 1s ease-in-out;
-
-        &.active {
-            transform: rotate(180deg);
-        }
-    }
-
-    p {
-        font-size: 3rem;
-        font-weight: bold;
-        margin-top: -20vh;
-        color: rgba(0, 0, 0, 0.0);
-        transition: all 1.2s ease;
-
-        &.active {
-            color: rgba(0, 0, 0, 1);
-        }
-    }
 }
 
 

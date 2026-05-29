@@ -8,7 +8,7 @@
             document.head.innerHTML += head;
         </script>
     </head>
-    <body id="index">
+    <body>
 
         <div class="landscape"></div>
         <script type="module">
@@ -16,18 +16,20 @@
 
             document.querySelector('.landscape').innerHTML = landscape;
         </script>
-        
-        <div class="background-effect"></div>
-        
-        <main>
-            <h1>Les petits beurres</h1>
-            <p>Un voyage interactif, au coeur du petit beurre Nantais !</p>
-            
-            <span class="bounce">
-                <button><i class="fa-solid fa-angles-up"></i></button>
-            </span>
-        </main>
 
+
+        <div id="index">
+            <div class="background-effect"></div>
+            
+            <main>
+                <h1>Les petits beurres</h1>
+                <p>Un voyage interactif, au coeur du petit beurre Nantais !</p>
+                
+                <span class="bounce">
+                    <button><i class="fa-solid fa-angles-up"></i></button>
+                </span>
+            </main>
+        </div>
         <script src="js/arrow_index.js"></script>
     </body>
 </html>

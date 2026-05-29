@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les petits beurres</title>
-    
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
-
-    <script src="https://kit.fontawesome.com/c4ab95abda.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    
-    <div class="background-effect"></div>
-    
-    <main>
-        <h1>Les petits beurres</h1>
-        <p>Un voyage interactif, au coeur du petit beurre Nantais !</p>
+    <head>
+        <script src="https://kit.fontawesome.com/c4ab95abda.js" crossorigin="anonymous"></script>
+        <script type="module">
+            import { head } from './modules/head.js';
+            document.title = "Les petits beurres";
+            document.head.innerHTML += head;
+        </script>
+    </head>
+    <body>
         
-        <span class="bounce">
-            <button><i class="fa-solid fa-angles-up"></i></button>
-        </span>
-    </main>
+        <div class="background-effect"></div>
+        
+        <main>
+            <h1>Les petits beurres</h1>
+            <p>Un voyage interactif, au coeur du petit beurre Nantais !</p>
+            
+            <span class="bounce">
+                <button><i class="fa-solid fa-angles-up"></i></button>
+            </span>
+        </main>
 
-    <script src="js/arrow_index.js"></script>
-</body>
+        <script src="js/arrow_index.js"></script>
+    </body>
 </html>

@@ -1,4 +1,3 @@
-
 // Use : -- Replace "moduleName" by Your and import it on your html page
 //
 //        <script type="module">

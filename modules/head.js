@@ -15,4 +15,6 @@ export const head = `
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/biscuit.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/navbar.css">
 `;

@@ -23,10 +23,9 @@ body::before {
     position: fixed;
     inset: 0;
     z-index: -1;
-    background-image: url("../img/biscuit/bg.png");
-    background-size: 7%;
+    background-image: url("../img/biscuit/bgmiettes.png");
+    background-size: 100%;
     background-position: center;
-    /* optionally: filter: sepia(50%); */
 }
 
 header {
@@ -74,7 +73,7 @@ section {
   position: absolute;
   max-height: 90vh;
   max-width: 70vw;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 0.4s ease;

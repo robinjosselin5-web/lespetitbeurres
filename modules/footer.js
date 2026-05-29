@@ -11,8 +11,8 @@
 // Replace "moduleName" by Your
 export const footer = `
 
-        <p>Copyright © 2026 - lespetitsbeurres</p>
-        <a href="#"> - Mentions légales</a>
+        <p>Copyright © 2026 - lespetitsbeurres </p>
+        <a href="#"> - Mentions légales </a>
         <a href="#"> - Confidentialité</a>
 
 `;

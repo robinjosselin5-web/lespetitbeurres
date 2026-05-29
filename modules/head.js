@@ -14,5 +14,6 @@ export const head = `
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/index.css">
-
+        <link rel="stylesheet" href="css/biscuit.css">
+        <link rel="stylesheet" href="css/mobile.css" media="screen and (orientation: portrait)">
 `;

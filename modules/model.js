@@ -4,7 +4,7 @@
 //        <script type="module">
 //            import { moduleName } from './modules/moduleName.js';
 //
-//            document.head.innerHTML += moduleName;
+//            document.moduleName.innerHTML += moduleName;
 //        </script>
 
 

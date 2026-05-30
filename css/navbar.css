@@ -22,4 +22,51 @@ header {
     font-size: 1.2rem;
     color: #222121;
     text-shadow: 3px 2px 4px rgba(0,0,0,0.6);
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background: #333;
+    }
+
+    nav ul li {
+        position: relative;
+        display: inline-block;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 15px 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul li:hover {
+        background: #555;
+    }
+
+    /* Sous-menu caché */
+    nav ul li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #444;
+        min-width: 150px;
+    }
+
+    /* Affiche le sous-menu au survol */
+    nav ul li:hover ul {
+        display: block;
+    }
+
+    nav ul li ul li {
+        display: block;
+    }
+
+}
+
+.activetest {
+    background-color: red;
 }

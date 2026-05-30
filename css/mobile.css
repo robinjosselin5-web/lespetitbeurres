@@ -1,9 +1,9 @@
-@media (max-width : 900px) {
+@media (max-width : 1000px) {
 
     #index {
         main {
             h1 {
-                font-size: 4rem;
+                font-size: 3rem;
             }
 
             span.bounce {

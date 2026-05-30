@@ -16,5 +16,18 @@
                 margin-top: -30vh;
             }
         }
-    }    
+    }
+    
+    #themes {
+        section {
+            max-width: 100%;
+
+            article {
+                padding: 24px;
+                p {
+                    max-width: 80%;
+                }            
+            }
+        }       
+    }
 }

@@ -17,10 +17,24 @@
             document.querySelector('.landscape').innerHTML += getLandscape("..");
         </script>
 
-
         <div id="themes">
+
+            <header></header>
+            <script type="module">
+                import { getHeader } from './modules/header.js';
+
+                document.querySelector('header').innerHTML = getHeader(".");
+            </script>
             
             
+
+            <footer></footer>
+            <script type="module">
+                import { getFooter } from './modules/footer.js';
+
+                document.querySelector('footer').innerHTML = getFooter(".");
+            </script>
+
         </div>
     </body>
 </html>

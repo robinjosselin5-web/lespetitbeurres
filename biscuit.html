@@ -18,11 +18,14 @@
             document.querySelector('.landscape').innerHTML += getLandscape(".");
         </script>
 
-            <header>
-                <nav>
-                    Logo - List
-                </nav>
-            </header>
+            <header></header>
+            <script type="module">
+                import { getHeader } from './modules/header.js';
+
+                document.querySelector('header').innerHTML = getHeader(".");
+            </script>
+
+
             <div id="biscuitall">  
             <main>
                 <section>

@@ -3,18 +3,19 @@
     <head>
         <script src="https://kit.fontawesome.com/c4ab95abda.js" crossorigin="anonymous"></script>
         <script type="module">
-            import { head } from './modules/head.js';
+            import { getHead } from './modules/head.js';
+
             document.title = "Les petits beurres";
-            document.head.innerHTML += head;
+            document.head.innerHTML += getHead(".");
         </script>
     </head>
     <body>
 
         <div class="landscape"></div>
         <script type="module">
-            import { landscape } from '/modules/landscape.js';
+            import { getLandscape } from './modules/landscape.js';
 
-            document.querySelector('.landscape').innerHTML = landscape;
+            document.querySelector('.landscape').innerHTML += getLandscape(".");
         </script>
 
 

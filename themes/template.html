@@ -11,30 +11,39 @@
     <body>
 
         <div class="landscape"></div>
-        <script type="module">
-            import { getLandscape } from '../modules/landscape.js';
-
-            document.querySelector('.landscape').innerHTML += getLandscape("..");
-        </script>
 
         <div id="themes">
-
             <header></header>
-            <script type="module">
-                import { getHeader } from './modules/header.js';
 
-                document.querySelector('header').innerHTML = getHeader(".");
-            </script>
-            
-            
+            <section>
+                <article>
+                    <h1>Themes Title</h1>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+                       It has roots in a piece of classical Latin literature from 45 BC,
+                       making it over 2000 years old. Richard McClintock,
+                       a Latin professor at Hampden-Sydney College in Virginia,
+                       looked up one of the more obscure Latin words, consectetur,
+                       from a Lorem Ipsum passage, and going through the cites of the word in classical
+                    </p>
+                </article>
+            </section>
 
             <footer></footer>
-            <script type="module">
-                import { getFooter } from './modules/footer.js';
-
-                document.querySelector('footer').innerHTML = getFooter(".");
-            </script>
-
         </div>
+
+    <!-- Modules -->
+        <script type="module">
+            import { getLandscape } from '../modules/landscape.js';
+            document.querySelector('.landscape').innerHTML += getLandscape("..");
+        </script>        
+        <script type="module">
+            import { getHeader } from '../modules/header.js';
+            document.querySelector('header').innerHTML = getHeader("..");
+        </script>
+        <script type="module">
+            import { getFooter } from '../modules/footer.js';
+            document.querySelector('footer').innerHTML = getFooter("..");
+        </script>
+    <!-- Fin modules -->
     </body>
 </html>

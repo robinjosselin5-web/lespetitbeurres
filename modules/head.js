@@ -15,9 +15,11 @@ export function getHead(basePath = ".") {
         <link rel="stylesheet" href="${basePath}/css/style.css">
         <link rel="stylesheet" href="${basePath}/css/index.css">
         <link rel="stylesheet" href="${basePath}/css/biscuit.css">
+        <link rel="stylesheet" href="${basePath}/css/template-themes.css">
         <link rel="stylesheet" href="${basePath}/css/footer.css">
         <link rel="stylesheet" href="${basePath}/css/navbar.css">
         <link rel="stylesheet" href="${basePath}/css/landscape.css">
         <link rel="stylesheet" href="${basePath}/css/mobile.css">
     `;
 }
+ 

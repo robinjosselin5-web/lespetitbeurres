@@ -15,4 +15,4 @@ export function getFooter(basePath = ".") {
         <a href="#"> - Mentions légales </a>
         <a href="#"> - Confidentialité</a>
         `;
-}
+} 

@@ -2,19 +2,20 @@
 <html lang="en">
 <head>
     <script src="https://kit.fontawesome.com/c4ab95abda.js" crossorigin="anonymous"></script>
-     <script type="module">
-            import { head } from './modules/head.js';
-            document.title = "Les petits beurres";
-            document.head.innerHTML += head;
-        </script>
+    <script type="module">
+        import { getHead } from './modules/head.js';
+
+        document.title = "Les petits beurres";
+        document.head.innerHTML += getHead(".");
+    </script>
 </head>
     <body>
 
         <div class="landscape"></div>
         <script type="module">
-            import { landscape } from '/modules/landscape.js';
+            import { getLandscape } from './modules/landscape.js';
 
-            document.querySelector('.landscape').innerHTML = landscape;
+            document.querySelector('.landscape').innerHTML += getLandscape(".");
         </script>
 
             <header>
@@ -35,11 +36,11 @@
             <footer></footer>
 
             <script type="module">
-                import { footer } from '/modules/footer.js';
+                import { getFooter } from './modules/footer.js';
 
-                document.querySelector('footer').innerHTML = footer;
+                document.querySelector('footer').innerHTML = getFooter(".");
             </script>
         </div>
     </body>
 </html>
-
+ 

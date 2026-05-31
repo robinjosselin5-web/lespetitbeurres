@@ -2,6 +2,9 @@ window.addEventListener("DOMContentLoaded", () => {
     let currentPage = 1;
 
     const titleSection = document.querySelector("h1");
+    const navbar = document.querySelectorAll("nav ul li ul li");
+    const buttonLess = document.getElementById("buttonLess")
+    const buttonMore = document.getElementById("buttonMore")
 
     const firstTitle = "First Title";
     const secondTitle = "Second Title";
@@ -19,6 +22,13 @@ window.addEventListener("DOMContentLoaded", () => {
         return nbs - 1;
     }
 
+    // function display 
+    function updatePage(actualPage, newPage){
+        if(actualPage !== newPage) {
+            titleSection.innerHTML = tableLink[resetIndex(newPage)].title;
+        }
+    }
+
     // fonction qui reset les class et attribue la class active
     function linkIsActive(link) {
 
@@ -34,16 +44,34 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     // On écoute les clics dans la navbar
-    document.querySelectorAll("nav ul li ul li").forEach(link => {
+    navbar.forEach(link => {
         link.addEventListener("click", () => {
             
             linkIsActive(link.id);
-
-            if(currentPage !== link.id) {
-                 titleSection.innerHTML = tableLink[resetIndex(link.id)].title;
-                 currentPage = Number(link.id);
-            }
+            updatePage(currentPage, link.id);
+            currentPage = link.id;
+            console.log(currentPage);
         });
+    });
+
+    buttonLess.addEventListener("click", () => {
+        if(currentPage > 1) {
+            let newPageSelected = currentPage - 1
+            updatePage(currentPage, newPageSelected);
+            currentPage = newPageSelected;
+            linkIsActive(currentPage);
+            console.log(currentPage);
+        }
+    });
+
+    buttonMore.addEventListener("click", () => {
+        if(currentPage < 3) {
+            let newPageSelected = currentPage + 1
+            updatePage(currentPage, newPageSelected);
+            currentPage = newPageSelected;
+            linkIsActive(currentPage);
+            console.log(currentPage);
+        }
     });
     
     linkIsActive(currentPage);

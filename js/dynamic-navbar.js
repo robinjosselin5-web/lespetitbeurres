@@ -8,14 +8,34 @@ window.addEventListener("DOMContentLoaded", () => {
     const buttonMore = document.getElementById("buttonMore");
 
     const firstTitle = "First Title";
+    const firstText = `Contrary to popular belief, Lorem Ipsum is not simply random text.
+                       It has roots in a piece of classical Latin literature from 45 BC,
+                       making it over 2000 years old. Richard McClintock,
+                       a Latin professor at Hampden-Sydney College in Virginia,
+                       looked up one of the more obscure Latin words, consectetur,
+                       from a Lorem Ipsum passage, and going through the cites of the word in classical`;
+
     const secondTitle = "Second Title";
+    const secondText = `Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It has roots in a piece of classical Latin literature from 45 BC,
+                        making it over 2000 years old. Richard McClintock,
+                        a Latin professor at Hampden-Sydney College in Virginia,
+                        looked up one of the more obscure Latin words, consectetur,
+                        from a Lorem Ipsum passage, and going through the cites of the word in classical`;
+
     const thirdTitle = "Three Title";
+    const thirdText = `Contrary to popular belief, Lorem Ipsum is not simply random text.
+                       It has roots in a piece of classical Latin literature from 45 BC,
+                       making it over 2000 years old. Richard McClintock,
+                       a Latin professor at Hampden-Sydney College in Virginia,
+                       looked up one of the more obscure Latin words, consectetur,
+                       from a Lorem Ipsum passage, and going through the cites of the word in classical`;
     
     // On déclare les liens dans un objet
     const tableLink = [
-        {link1 : document.getElementById("1"), title: firstTitle},
-        {link2 : document.getElementById("2"), title: secondTitle},
-        {link3 : document.getElementById("3"), title: thirdTitle}
+        {link1 : document.getElementById("1"), title: firstTitle, text : firstText},
+        {link2 : document.getElementById("2"), title: secondTitle, text : secondText},
+        {link3 : document.getElementById("3"), title: thirdTitle, text : thirdText}
     ]
 
     const tableDot = [
@@ -33,6 +53,7 @@ window.addEventListener("DOMContentLoaded", () => {
     function updatePage(actualPage, newPage){
         if(actualPage !== newPage) {
             articleContainer.innerHTML = `<h1> ${tableLink[resetIndex(newPage)].title} </h1>`;
+            articleContainer.innerHTML += `<p> ${tableLink[resetIndex(newPage)].text} <p>`;
         }
     }
 

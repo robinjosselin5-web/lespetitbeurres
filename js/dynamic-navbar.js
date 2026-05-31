@@ -51,10 +51,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // function display 
     function updatePage(actualPage, newPage){
-        if(actualPage !== newPage) {
             articleContainer.innerHTML = `<h1> ${tableLink[resetIndex(newPage)].title} </h1>`;
             articleContainer.innerHTML += `<p> ${tableLink[resetIndex(newPage)].text} <p>`;
-        }
     }
 
     // fonction qui reset les class et attribue la class active
@@ -76,7 +74,11 @@ window.addEventListener("DOMContentLoaded", () => {
         link.addEventListener("click", () => {
             
             linkIsActive(link.id);
-            updatePage(currentPage, link.id);
+
+            if(currentPage !== link.id) {
+                updatePage(currentPage, link.id);
+            }
+
             currentPage = link.id;
             console.log(currentPage);
         });
@@ -85,7 +87,11 @@ window.addEventListener("DOMContentLoaded", () => {
     // on écoute les dots dans la navigation de la page
     tableDot.forEach(item => {
         item.dotElement.addEventListener("click", () => {
-            updatePage(currentPage, item.dot);
+
+            if(currentPage !== item.dot) {
+                updatePage(currentPage, item.dot);
+            }
+
             currentPage = item.dot;
             linkIsActive(currentPage);
             console.log(currentPage);
@@ -97,7 +103,11 @@ window.addEventListener("DOMContentLoaded", () => {
     buttonLess.addEventListener("click", () => {
         if(currentPage > 1) {
             let newPageSelected = currentPage - 1
-            updatePage(currentPage, newPageSelected);
+
+            if(currentPage !== newPageSelected) {
+                updatePage(currentPage, newPageSelected);
+            }
+
             currentPage = newPageSelected;
             linkIsActive(currentPage);
             console.log(currentPage);
@@ -108,14 +118,18 @@ window.addEventListener("DOMContentLoaded", () => {
     buttonMore.addEventListener("click", () => {
         if(currentPage < 3) {
             let newPageSelected = currentPage + 1
-            updatePage(currentPage, newPageSelected);
+
+            if(currentPage !== newPageSelected) {
+                updatePage(currentPage, newPageSelected);
+            }
+
             currentPage = newPageSelected;
             linkIsActive(currentPage);
             console.log(currentPage);
         }
     });
 
-    linkIsActive(currentPage);
+    updatePage(currentPage, currentPage);
 });
 
 // update titre et paragraphe si currentPage change ? 

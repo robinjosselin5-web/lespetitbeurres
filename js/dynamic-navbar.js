@@ -1,10 +1,11 @@
 window.addEventListener("DOMContentLoaded", () => {
     let currentPage = 1;
 
+    const articleContainer = document.getElementById("container");
     const titleSection = document.querySelector("h1");
     const navbar = document.querySelectorAll("nav ul li ul li");
-    const buttonLess = document.getElementById("buttonLess")
-    const buttonMore = document.getElementById("buttonMore")
+    const buttonLess = document.getElementById("buttonLess");
+    const buttonMore = document.getElementById("buttonMore");
 
     const firstTitle = "First Title";
     const secondTitle = "Second Title";
@@ -17,6 +18,12 @@ window.addEventListener("DOMContentLoaded", () => {
         {link3 : document.getElementById("3"), title: thirdTitle}
     ]
 
+    const tableDot = [
+        {dot : 1, dotElement : document.getElementById("btnDotOne")},
+        {dot : 2, dotElement : document.getElementById("btnDotTwo")},
+        {dot : 3, dotElement : document.getElementById("btnDotThree")}
+    ]
+
     // reset Index pour accéder aux tableau d'objet
     function resetIndex(nbs){
         return nbs - 1;
@@ -25,7 +32,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // function display 
     function updatePage(actualPage, newPage){
         if(actualPage !== newPage) {
-            titleSection.innerHTML = tableLink[resetIndex(newPage)].title;
+            articleContainer.innerHTML = `<h1> ${tableLink[resetIndex(newPage)].title} </h1>`;
         }
     }
 
@@ -54,6 +61,18 @@ window.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // on écoute les dots dans la navigation de la page
+    tableDot.forEach(item => {
+        item.dotElement.addEventListener("click", () => {
+            updatePage(currentPage, item.dot);
+            currentPage = item.dot;
+            linkIsActive(currentPage);
+            console.log(currentPage);
+        });
+    });
+
+
+    // Clique sur le bouton gauche
     buttonLess.addEventListener("click", () => {
         if(currentPage > 1) {
             let newPageSelected = currentPage - 1
@@ -64,6 +83,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    // Clique sur le bouton droite
     buttonMore.addEventListener("click", () => {
         if(currentPage < 3) {
             let newPageSelected = currentPage + 1
@@ -73,7 +93,7 @@ window.addEventListener("DOMContentLoaded", () => {
             console.log(currentPage);
         }
     });
-    
+
     linkIsActive(currentPage);
 });
 

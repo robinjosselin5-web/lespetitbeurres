@@ -28,6 +28,8 @@
 
             h1 {
                 font-weight: bold;
+                opacity: 0;
+                animation: fadeIn 2s ease-in-out forwards;
             }
 
             p {
@@ -47,5 +49,15 @@
             display: inline-block;
             margin: 0px 20px;
         }
+
+        span {
+            cursor: pointer;
+        }
     }
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+

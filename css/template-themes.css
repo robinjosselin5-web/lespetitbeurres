@@ -35,4 +35,17 @@
             }            
         }
     }
+
+    .dot-navigation {
+        position: relative;
+        top: -20%;
+        width: 100%;
+        font-size: 60px;
+        z-index: 9999;
+
+        button, span {
+            display: inline-block;
+            margin: 0px 20px;
+        }
+    }
 }

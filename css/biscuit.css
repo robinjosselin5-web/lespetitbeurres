@@ -1,16 +1,15 @@
 #biscuitall {
     height: 100vh;
-    overflow: hidden;
     position: relative;
     background-image: url("../img/biscuit/bgmiettes.png");
     background-size: cover;
     background-repeat: no-repeat;
-
+    
     main {
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-top: 6vh;
+        margin-bottom: 10vh;
 
         section {
             position: relative;

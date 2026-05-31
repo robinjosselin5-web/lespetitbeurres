@@ -15,14 +15,14 @@ export function getFooter(basePath = ".") {
         <section id="footer-brand">
 
                 <a href="/" id="logo">
-                <img src="img/footer/logo.svg" alt="LU">
+                <img src="${basePath}/img/footer/logo.svg" alt="LU">
                 </a>
 
                 <ul id="social">
-                        <li><a href="#"><img src="img/footer/facebook.png" alt="Facebook"/></a></li>
-                        <li><a href="#"><img src="img/footer/youtube.png" alt="YouTube"/></a></li>
-                        <li><a href="#"><img src="img/footer/instagram.png" alt="Instagram"/></a></li>
-                        <li><a href="#"><img src="img/footer/email.png" alt="Newsletter"/></a></li>
+                        <li><a href="#"><img src="${basePath}/img/footer/facebook.png" alt="Facebook"/></a></li>
+                        <li><a href="#"><img src="${basePath}/img/footer/youtube.png" alt="YouTube"/></a></li>
+                        <li><a href="#"><img src="${basePath}/img/footer/instagram.png" alt="Instagram"/></a></li>
+                        <li><a href="#"><img src="${basePath}/img/footer/email.png" alt="Newsletter"/></a></li>
                 </ul>
 
                 <a href="#" id="bouton">Rejoindre notre communauté</a>

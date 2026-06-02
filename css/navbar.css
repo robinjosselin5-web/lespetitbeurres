@@ -1,72 +1,184 @@
+@font-face {
+    font-family: "Ainslie";
+    src: url("fonts/AinslieSans-ConMed.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Ainslie";
+    src: url("../fonts/AinslieSans-NorBol.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Korolev";
+    src: url("../fonts/Korolev-Heavy.ttf") format("truetype");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Luset";
+    src: url("../fonts/Luset-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Luset";
+    src: url("../fonts/Luset-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Luset";
+    src: url("../fonts/Luset-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+ul {
+    list-style: none;
+}
+
 header {
-    position: fixed;
-    width: 80%;
-    left: 10%;
-    height: 5vh;
-    top: 0;
-    margin-top: 8px;
-    z-index: 1;
-
-    background: rgba(0, 0, 0, 0.1);
-
-    backdrop-filter: blur(3px);
-
-    border: solid 1px rgba(255, 0, 0, 0.25);
-    border-radius: 5px 5px 5px 5px;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  
+    width: 100%;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-  
-    font-size: 1.2rem;
-    color: #222121;
-    text-shadow: 3px 2px 4px rgba(0,0,0,0.6);
+    background-color: #FFF;
 
-    nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        background: #333;
+    nav {
+        width: 60%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Ainslie", sans-serif;
+
+        img {
+            max-width: 65px;
+        }
+
+        ul.menu {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            font-family: "Ainslie", sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            li {
+                height: 24px;
+                position: relative;
+                display: inline-block;
+
+                a {
+                    position: relative;
+                    display: inline-block;
+                    color: rgba(227, 6, 19, 0.4);
+                    text-decoration: none;
+                    font-size: 15px;
+                    font-weight: 700;
+                    letter-spacing: 0.02em;
+                    line-height: 24px;
+                }
+
+                a::after {
+                    content: attr(data-text);
+                    position: absolute;
+                    inset: 0;
+                    color: #E30613;
+                    font: inherit;
+                    letter-spacing: inherit;
+                    white-space: nowrap;
+                    clip-path: inset(0 100% 0 0);
+                    transition: clip-path 0.5s ease;
+                }
+             }
+
+            li:not(.dot-nav)::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -4px;
+                height: 2px;
+                width: 100%;
+                background: #E30613;
+                clip-path: inset(0 100% 0 0);
+                transition: clip-path 0.5s ease;
+            }
+
+            li:not(.dot-nav):hover::after,
+            li.active::after {
+                clip-path: inset(0 0% 0 0);
+            }
+
+            li:not(.dot-nav):hover a::after,
+            li.active a::after {
+                clip-path: inset(0 0% 0 0);
+            }
+
+            li.active {
+                border-bottom: 2px solid #E30613;
+            }
+
+            li.dot-nav {
+                display: flex;
+                align-items: center;
+                height: auto;
+                gap: 0;
+
+                i {
+                    font-size: 18px;
+                    color: #E30613;
+                    z-index: 2;
+                    cursor: pointer;
+                    line-height: 1;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.3);
+                    }
+
+                    &.active {
+                        transform: scale(1.3);
+                    }
+                }
+                span {
+                    width: 20px;
+                    height: 2px;
+                    background: #E30613;
+                    margin-left: -3px;
+                    margin-right: -3px;
+                    display: inline-block;
+                }
+            }
+        }
+
+        .btn-about {
+            padding: 8px 16px;
+            background-color: #E30613;
+            color: #FFF;
+            font-weight: 700;
+            border-radius: 8px;
+            text-transform: uppercase;
+            transition: all 0.4s ease-out;
+            
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
-
-    nav ul li {
-        position: relative;
-        display: inline-block;
-    }
-
-    nav ul li a {
-        display: block;
-        padding: 15px 20px;
-        color: white;
-        text-decoration: none;
-    }
-
-    nav ul li:hover {
-        background: #555;
-    }
-
-    /* Sous-menu caché */
-    nav ul li ul {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: #444;
-        min-width: 150px;
-    }
-
-    /* Affiche le sous-menu au survol */
-    nav ul li:hover ul {
-        display: block;
-    }
-
-    nav ul li ul li {
-        display: block;
-    }
-
-}
-
-.activetest {
-    background-color: red;
 }

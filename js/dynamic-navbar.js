@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
     const articleContainer = document.getElementById("container");
     const titleSection = document.querySelector("h1");
-    const navbar = document.querySelectorAll("nav ul li ul li");
+    const navbar = document.querySelectorAll("nav ul li i");
     const buttonLess = document.getElementById("buttonLess");
     const buttonMore = document.getElementById("buttonMore");
 
@@ -53,12 +53,17 @@ window.addEventListener("DOMContentLoaded", async () => {
         tableLink.forEach(item => {
             Object.values(item).forEach(value => {
                 if (value instanceof HTMLElement) {
-                    value.classList.remove("activetest");
+                    value.classList.remove("active");
+                    value.classList.remove("fa-circle");
+                    value.classList.add("fa-circle-dot");
                 }
             });
         });
 
-        document.getElementById(link)?.classList.add("activetest");
+        document.getElementById(link)?.classList.add("fa-circle");
+        document.getElementById(link)?.classList.remove("fa-circle-dot");
+        document.getElementById(link)?.classList.add("active");
+
     }
 
     // On écoute les clics dans la navbar

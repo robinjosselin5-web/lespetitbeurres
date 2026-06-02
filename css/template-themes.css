@@ -2,19 +2,27 @@
     height: 100vh;
     position: relative;
     background-color: var(--third-color);
-    background-image: url('../img/theme1/cointheme1.png'),
-                      url('../img/theme1/second-bg.png');
+    background-image: url("../img/theme1/cointheme1.png"), url("../img/biscuit/bgmiettes.png");
+                      
 
-    background-size: 70%,
-                     23%;
+
+    background-size: 70%, cover;
+                     
 
     background-position-x: right,
-                           80%;
+                           right;
 
-    background-position-y: bottom;
+    background-position-y: bottom,
+                           bottom;
     background-repeat: no-repeat;
     
     main {
+        background-image: url("../img/theme1/second-bg.png");
+        background-size: 23%;
+        background-position-x: 80%;
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -29,7 +37,8 @@
             align-items: center;
             
             article {
-                max-width: 60%;
+                max-width: 40%;
+                font-weight: 600;
             }
             
             .dot-navigation {

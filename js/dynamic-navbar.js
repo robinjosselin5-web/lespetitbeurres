@@ -31,9 +31,9 @@ window.addEventListener("DOMContentLoaded", async () => {
     ];
 
     const tableDot = [
-        {dot : 1, dotElement : document.getElementById("btnDotOne")},
-        {dot : 2, dotElement : document.getElementById("btnDotTwo")},
-        {dot : 3, dotElement : document.getElementById("btnDotThree")}
+        {dotElement : document.getElementById("btnDotOne"), dot : 1},
+        {dotElement : document.getElementById("btnDotTwo"), dot : 2},
+        {dotElement : document.getElementById("btnDotThree"), dot : 3}
     ]
 
     // reset Index pour accéder aux tableau d'objet
@@ -48,8 +48,9 @@ window.addEventListener("DOMContentLoaded", async () => {
     }
 
     // fonction qui reset les class et attribue la class active
-    function linkIsActive(link) {
+    function linkIsActive(nbs) {
 
+        // dot navbar
         tableLink.forEach(item => {
             Object.values(item).forEach(value => {
                 if (value instanceof HTMLElement) {
@@ -60,9 +61,27 @@ window.addEventListener("DOMContentLoaded", async () => {
             });
         });
 
-        document.getElementById(link)?.classList.add("fa-circle");
-        document.getElementById(link)?.classList.remove("fa-circle-dot");
-        document.getElementById(link)?.classList.add("active");
+        // Dot page
+        tableDot.forEach(item => {
+            Object.values(item).forEach(value => {
+                console.log("test");
+                if (value instanceof HTMLElement) {
+                    value.classList.remove("active");
+                    value.classList.remove("fa-circle");
+                    value.classList.add("fa-circle-dot");
+                }
+            });
+        });
+
+
+
+        tableLink[resetIndex(nbs)].link.classList.add("fa-circle");
+        tableLink[resetIndex(nbs)].link.classList.remove("fa-circle-dot");
+        tableLink[resetIndex(nbs)].link.classList.add("active");
+
+        tableDot[resetIndex(nbs)].dotElement.classList.add("fa-circle");
+        tableDot[resetIndex(nbs)].dotElement.classList.remove("fa-circle-dot");
+        tableDot[resetIndex(nbs)].dotElement.classList.add("active");
 
     }
 
@@ -77,7 +96,6 @@ window.addEventListener("DOMContentLoaded", async () => {
             }
 
             currentPage = link.id;
-            console.log(currentPage);
         });
     });
 
@@ -91,7 +109,6 @@ window.addEventListener("DOMContentLoaded", async () => {
 
             currentPage = item.dot;
             linkIsActive(currentPage);
-            console.log(currentPage);
         });
     });
 

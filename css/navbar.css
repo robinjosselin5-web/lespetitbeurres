@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Ainslie";
-    src: url("fonts/AinslieSans-ConMed.ttf") format("truetype");
+    src: url("../fonts/AinslieSans-ConMed.ttf") format("truetype");
     font-weight: 500;
 }
 
@@ -155,7 +155,7 @@ header {
                     &.active {
                         transform: scale(1.3);
                     }
-                }
+                } 
                 span {
                     width: 20px;
                     height: 2px;

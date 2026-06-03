@@ -66,8 +66,8 @@ header {
         align-items: center;
         font-family: "Ainslie", sans-serif;
 
-        img {
-            max-width: 65px;
+        .logo {
+            width: 65px;
         }
 
         ul.menu {
@@ -89,7 +89,7 @@ header {
                     display: inline-block;
                     color: rgba(227, 6, 19, 0.4);
                     text-decoration: none;
-                    font-size: 15px;
+                    font-size: 1em;
                     font-weight: 700;
                     letter-spacing: 0.02em;
                     line-height: 24px;
@@ -141,7 +141,7 @@ header {
                 gap: 0;
 
                 i {
-                    font-size: 18px;
+                    font-size: 1em;
                     color: #E30613;
                     z-index: 2;
                     cursor: pointer;

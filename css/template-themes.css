@@ -6,7 +6,7 @@
                       
 
 
-    background-size: 70%, cover;
+    background-size: 70%, 115%;
                      
 
     background-position-x: right,
@@ -17,9 +17,9 @@
     background-repeat: no-repeat;
     
     main {
-        background-size: 23%;
+        background-size: 30%;
         background-position-x: 80%;
-        background-position-y: bottom;
+        background-position-y: center;
         background-repeat: no-repeat;
 
         width: 100%;
@@ -31,14 +31,14 @@
             display: flex;
             flex-direction: column;
             width: 80%;
-            height: 80vh;
+            height: 85vh;
             justify-content: space-evenly;
             margin: 0 auto;
             
             article {
                 max-width: 40%;
 
-                h1 {
+                h2 {
                     font-size: 3rem;
                     font-weight: 700;
                     font-family: "Korolev", sans-serif;

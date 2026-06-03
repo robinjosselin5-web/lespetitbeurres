@@ -43,8 +43,8 @@ window.addEventListener("DOMContentLoaded", async () => {
 
     // function display 
     function updatePage(actualPage, newPage){
-            articleContainer.innerHTML = `<h1> ${tableLink[resetIndex(newPage)].title} </h1>`;
-            articleContainer.innerHTML += `<p> ${tableLink[resetIndex(newPage)].text} <p>`;
+            articleContainer.innerHTML = `<h1 class="animate__animated animate__fadeIn"> ${tableLink[resetIndex(newPage)].title} </h1>`;
+            articleContainer.innerHTML += `<p class="animate__animated animate__fadeIn"> ${tableLink[resetIndex(newPage)].text} <p>`;
     }
 
     // fonction qui reset les class et attribue la class active

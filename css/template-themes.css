@@ -17,7 +17,6 @@
     background-repeat: no-repeat;
     
     main {
-        background-image: url("../img/theme1/second-bg.png");
         background-size: 23%;
         background-position-x: 80%;
         background-position-y: bottom;
@@ -26,19 +25,31 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-bottom: 10vh;
 
         section {
             position: relative;
             display: flex;
             flex-direction: column;
+            width: 80%;
             height: 80vh;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: space-evenly;
+            margin: 0 auto;
             
             article {
                 max-width: 40%;
-                font-weight: 600;
+
+                h1 {
+                    font-size: 3rem;
+                    font-weight: 700;
+                    font-family: "Korolev", sans-serif;
+                }
+
+                p {
+                    margin-top: 24px;
+                    font-size: 1.5rem;
+                    font-family: "Ainslie", sans-serif;
+                    font-size: bold;
+                }
             }
             
             .dot-navigation {

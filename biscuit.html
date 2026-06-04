@@ -10,42 +10,45 @@
         document.head.innerHTML += getHead(".");
     </script>
 </head>
-    <body>
+<body>
 
-            <div class="landscape"></div>
+    <div class="landscape"></div>
 
-            <!-- Header dans div biscuit -->
-            <header></header>
+    <!-- Header dans div biscuit -->
+    <header></header>
 
-        <div id="biscuitall">  
-            <main>
-                <section>
-                    <img src="img/biscuit/biscuit-shadow.png" alt="PetitLU" class="biscuit">
-                    <a class="theme1" href="themes/theme1/theme1.html">1</a>
-                    <a class="theme2" href="themes/theme2/theme2.html">2</a>
-                    <a class="theme3" href="themes/theme3/theme3.html">3</a>
-                    <a class="theme4" href="themes/theme4/theme4.html">4</a>
-                </section>
-            </main>
+    <div id="biscuitall">
+        <main>
+            <section class="bibi">
+                <img src="img/biscuit/biscuit-shadow.png" alt="PetitLU" class="biscuit">
 
-            <footer></footer>
-        </div>
+                <!-- Les <i> et <span class="lens"> sont injectés par le JS -->
+                <a class="theme1" href="themes/history.html"></a>
+                <a class="theme2" href="themes/entreprise.html"></a>
+                <a class="theme3" href="themes/innovation.html"></a>
+                <a class="theme4" href="themes/theme4/theme4.html"></a>
 
-        <!-- Modules -->
-            <script type="module">
-                import { getLandscape } from './modules/landscape.js';
-                document.querySelector('.landscape').innerHTML += getLandscape(".");
-            </script>        
-            <script type="module">
-                import { getHeader } from './modules/header.js';
-                document.querySelector('header').innerHTML = getHeader(".");
-            </script>
-            <script type="module">
-                import { getFooter } from './modules/footer.js';
-                document.querySelector('footer').innerHTML = getFooter(".");
-            </script>
-        <!-- Fin modules -->
+                <script src="modules/loupe.js"></script>
+            </section>
+        </main>
 
-    </body>
+        <footer></footer>
+    </div>
+
+    <!-- Modules -->
+    <script type="module">
+        import { getLandscape } from './modules/landscape.js';
+        document.querySelector('.landscape').innerHTML += getLandscape(".");
+    </script>
+    <script type="module">
+        import { getHeader } from './modules/header.js';
+        document.querySelector('header').innerHTML = getHeader(".");
+    </script>
+    <script type="module">
+        import { getFooter } from './modules/footer.js';
+        document.querySelector('footer').innerHTML = getFooter(".");
+    </script>
+    <!-- Fin modules -->
+
+</body>
 </html>
- 

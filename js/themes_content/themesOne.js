@@ -6,7 +6,7 @@ export const content = {
                 Le succès est immédiat grâce à son goût et à son prix accessible. Plus d'un siècle après sa création,
                 le Petit Beurre reste l'un des biscuits les plus connus de France et constitue un symbole du savoir-faire
                 de LU.`,
-    firstBackground: `url(./../img/theme1/louislu.png)`,
+    firstBackground: `url(../img/theme1/louislu.png)`,
     
     
     secondTitle: "Les caractéristiques et symboles du biscuit",
@@ -15,7 +15,7 @@ export const content = {
                  petits trous évoquent les 24 heures d'une journée. Ces éléments montrent le soin apporté à sa conception.
                  Sa forme rectangulaire et son nom gravé au centre le rendent immédiatement reconnaissable. Ce design n'a
                  pratiquement pas changé depuis sa création.`,
-    secondBackground: `url(./../img/theme1/horloge.png)`,
+    secondBackground: `url(../img/theme1/horloge.png)`,
     
     thirdTitle: "Son succès en France et dans le monde",
     thirdText: `Depuis sa création, le Petit Beurre connaît un immense succès auprès des consommateurs. Son goût simple plaît
@@ -23,5 +23,5 @@ export const content = {
                 Au fil du temps, LU a exporté ses produits dans de nombreux pays, permettant au Petit Beurre de se faire connaître
                 à l'international. Aujourd'hui encore, il reste un produit emblématique de la marque et continue d'être vendu à
                 plusieurs millions d'exemplaires chaque année.`,
-    thirdBackground: `url(./../img/theme1/map.png)`
+    thirdBackground: `url(../img/theme1/map.png)`
 };

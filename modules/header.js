@@ -8,7 +8,7 @@ export function getHeader(basePath = ".") {
             </button>
             <ul class="menu">
 
-            </ul>
+             </ul> 
             <a class="btn-about" href="#">About</a>
         </nav>
         `;

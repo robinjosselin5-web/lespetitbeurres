@@ -89,10 +89,10 @@ window.addEventListener("DOMContentLoaded", async () => {
     else {
         // No theme: render a plain nav without dot navigation
         menu.innerHTML += `
-            <li><a data-text="Histoire" href="/themes/history.html">Histoire</a></li>
-            <li><a data-text="Entreprise" href="/themes/entreprise.html">Entreprise</a></li>
-            <li><a data-text="Innovation" href="/themes/innovation.html">Innovation</a></li>
-            <li><a data-text="Marketing" href="/themes/marketing.html">Marketing</a></li>`;
+            <li><a data-text="Histoire" href="themes/history.html">Histoire</a></li>
+            <li><a data-text="Entreprise" href="themes/entreprise.html">Entreprise</a></li>
+            <li><a data-text="Innovation" href="themes/innovation.html">Innovation</a></li>
+            <li><a data-text="Marketing" href="themes/marketing.html">Marketing</a></li>`;
 
         // Hide the dot-navigation section in the page since there's nothing to paginate
         const dotNavigation = document.querySelector(".dot-navigation");

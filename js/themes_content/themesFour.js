@@ -10,15 +10,15 @@ export const content = {
     secondTitle: "Le logo et l'identité visuelle",
     secondText: `L'identité visuelle de <strong>LU</strong> repose principalement sur son <strong>logo rouge et blanc</strong> facilement reconnaissable. Ce logo est
                  <strong>présent sur tous les emballages de la marque</strong> et contribue à son identification immédiate par les consommateurs.
-                 Au fil du temps, il a évolué tout en conservant ses éléments essentiels. L'entreprise accorde une grande importance
-                 à son image afin de transmettre des valeurs de qualité, de tradition et de convivialité associées à ses biscuits.`,
+                 Au fil du temps, il a évolué tout <strong>en conservant ses éléments essentiels.</strong> L'entreprise accorde <strong>une grande importance
+                 à son image</strong> afin de transmettre des <strong>valeurs de qualité, de tradition et de convivialité</strong> associées à ses biscuits.`,
     secondBackground: `url(./../img/theme4/boitelu.png)`,
     
     thirdTitle: "Les stratégies marketing actuelles",
-    thirdText: `Aujourd'hui, LU utilise de nombreux moyens de communication pour promouvoir ses produits. En plus des publicités
-                télévisées, la marque est présente sur internet et les réseaux sociaux. Elle participe également à des opérations 
-                promotionnelles et à des partenariats avec différentes enseignes. L'objectif est de maintenir sa visibilité auprès 
-                des consommateurs tout en attirant les jeunes générations. Ces actions permettent à LU de rester une marque connue 
-                et appréciée dans un marché très concurrentiel.`,
+    thirdText: `Aujourd'hui, <strong>LU</strong> utilise de <strong>nombreux moyens de communication</strong> pour promouvoir ses produits. En plus des publicités
+                télévisées, la marque est <strong>présente sur internet et les réseaux sociaux</strong>. Elle participe également à des opérations 
+                promotionnelles et à des partenariats avec différentes enseignes. L'objectif est de <strong>maintenir sa visibilité auprès 
+                des consommateurs</strong> tout en attirant <strong>les jeunes générations.</strong> Ces actions permettent à <strong>LU</strong>de rester une marque connue 
+                et appréciée</strong> dans un marché très concurrentiel.`,
     thirdBackground: `url(./../img/theme4/pubyt.png)`
 };

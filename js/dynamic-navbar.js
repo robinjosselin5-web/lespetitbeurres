@@ -81,7 +81,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     else {
         // No theme: render a plain nav without dot navigation
         menu.innerHTML += `
-            <li><a data-text="Thèmes 1" href="/themes/history.html">Thèmes 1</a></li>
+            <li><a data-text="Thèmes 1" href="/themes/theme1/history.html">Thèmes 1</a></li>
             <li><a data-text="Thèmes 2" href="#">Thèmes 2</a></li>
             <li><a data-text="Thèmes 3" href="#">Thèmes 3</a></li>
             <li><a data-text="Thèmes 4" href="#">Thèmes 4</a></li>`;

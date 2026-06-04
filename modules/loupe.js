@@ -49,16 +49,16 @@ function positionThemes() {
             left = bLeft - tW * -0.4;
         }
         if (theme.classList.contains("theme2")) {
-            top  = bTop  - tH * 0;
-            left = bLeft + bW - tW * 0.6;
+            top  = bTop  - tH * 0.1;
+            left = bLeft + bW - tW * 0.65;
         }
         if (theme.classList.contains("theme3")) {
-            top  = bTop  + bH - tH * 0.8;
-            left = bLeft + bW - tW * 0.5;
+            top  = bTop  + bH - tH * 0.9;
+            left = bLeft + bW - tW * 0.7;
         }
         if (theme.classList.contains("theme4")) {
             top  = bTop  + bH - tH * 0.8;
-            left = bLeft - tW * -0.4;
+            left = bLeft - tW * -0.3;
         }
 
         theme.style.top    = `${top}px`;

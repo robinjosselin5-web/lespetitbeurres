@@ -4,7 +4,7 @@ export function getHeader(basePath = ".") {
         <nav>
             <a class="logo" href="./../biscuit.html"><img src="${basePath}/img/logo.svg" alt="LU logo"></a>
             <button class="menu-toggle">
-                menu
+                <p>menu</p>
                 <i class="fa-solid fa-bars"></i>
             </button>
             <ul class="menu">

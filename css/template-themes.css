@@ -66,6 +66,11 @@
                     font-size: 1.5rem;
                     font-family: "Ainslie", sans-serif;
                     font-size: bold;
+                
+                    strong {
+                        color: #E40613;
+                        font-weight: 900;
+                    }
                 }
             }
             

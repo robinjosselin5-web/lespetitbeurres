@@ -10,13 +10,13 @@
     background-position-x: right,
                            left;
 
-    background-position-y: bottom,
+    background-position-y: center,
                            top;
     background-repeat: no-repeat;
     height: 100%;
     
     main {
-        background-size: 30%;
+        background-size: 35%;
         background-position-x: 80%;
         background-position-y: center;
         background-repeat: no-repeat;
@@ -36,7 +36,7 @@
             border: var(--third-color) 2px solid;
             color: var(--third-color); 
             border-radius: 8px;
-            max-width: 220px;
+            max-width: 240px;
             font-family: Luset;
             font-weight: 500;
             text-transform: uppercase;

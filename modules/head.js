@@ -21,6 +21,7 @@ export function getHead(basePath = ".") {
         <link rel="stylesheet" href="${basePath}/css/footer.css">
         <link rel="stylesheet" href="${basePath}/css/landscape.css">
         <link rel="stylesheet" href="${basePath}/css/mobile.css">
+        <link rel="icon" type="image/x-icon" href="${basePath}img/logo.svg">
     `;
 }
  

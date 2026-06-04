@@ -18,6 +18,14 @@ window.addEventListener("DOMContentLoaded", async () => {
     const mainBackground = document.querySelector("main");
     const menu = document.querySelector("ul");
 
+
+    const toggle = document.querySelector(".menu-toggle");
+    const menuToggle = document.querySelector(".menu");
+
+    toggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("open");
+    });
+
     // --- Inject navbar ---
     // The dot-nav <i> ids "1","2","3" only exist after this block,
     // so tableLink / navbar must be built AFTER the injection below.

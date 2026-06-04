@@ -20,12 +20,14 @@
     
     #themes {
 
-        header {
-            nav {
-                width: 95%;
-                font-size: 0.9rem;
-            }
+        header nav {
+            width: 90%;
         }
+
+        ul.menu {
+            gap: 20px;
+        }
+
         main {
             height: 500px;
             section {
@@ -56,6 +58,46 @@
         main {
 
             height: 350px;
+            header {
+                height: auto;
+                padding: 15px 0;
+            }
+
+            header nav {
+                width: 95%;
+                position: relative;
+                flex-wrap: wrap;
+            }
+
+            .menu-toggle {
+                display: block;
+                order: 2;
+            }
+
+            .btn-about {
+                display: none;
+            }
+
+            ul.menu {
+                display: none !important;
+                flex-direction: column;
+                width: 100%;
+                gap: 20px;
+                padding: 25px 0;
+                text-align: center;
+                background: white;
+                order: 3;
+            }
+
+            ul.menu.open {
+                display: flex !important;
+            }
+
+            ul.menu .dot-nav {
+                display: none;
+            }
+
+            
             section {
                 max-width: 100%;
                 padding: 96px 0px;

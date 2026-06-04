@@ -65,6 +65,15 @@ header {
         justify-content: space-between;
         align-items: center;
         font-family: "Ainslie", sans-serif;
+        
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: #E30613;
+            cursor: pointer;
+        }
 
         .logo {
             width: 65px;

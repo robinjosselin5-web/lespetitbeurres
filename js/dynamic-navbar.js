@@ -24,7 +24,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
     if (theme === "themesOne") {
         menu.innerHTML += `
-            <li class="active"><a data-text="Thèmes 1" href="history.html">Thèmes 1</a></li>
+            <li class="active"><a data-text="Histoire" href="history.html">Histoire</a></li>
             <li class="dot-nav">
                 <i id="1" class="fa-solid fa-circle active"></i>
                 <span></span>
@@ -32,14 +32,14 @@ window.addEventListener("DOMContentLoaded", async () => {
                 <span></span>
                 <i id="3" class="fa-solid fa-circle-dot"></i>
             </li>
-            <li><a data-text="Thèmes 2" href="#">Thèmes 2</a></li>
-            <li><a data-text="Thèmes 3" href="#">Thèmes 3</a></li>
+            <li><a data-text="Entreprise" href="entreprise.html">Entreprise</a></li>
+            <li><a data-text="Innovation" href="innovation.html">Innovation</a></li>
             <li><a data-text="Thèmes 4" href="#">Thèmes 4</a></li>`;
     }
     else if (theme === "themesTwo") {
         menu.innerHTML += `
-            <li><a data-text="Thèmes 1" href="history.html">Thèmes 1</a></li>
-            <li class="active"><a data-text="Thèmes 2" href="#">Thèmes 2</a></li>
+            <li><a data-text="Histoire" href="history.html">Histoire</a></li>
+            <li><a data-text="Entreprise" href="entreprise.html">Entreprise</a></li>
             <li class="dot-nav">
                 <i id="1" class="fa-solid fa-circle active"></i>
                 <span></span>
@@ -47,14 +47,14 @@ window.addEventListener("DOMContentLoaded", async () => {
                 <span></span>
                 <i id="3" class="fa-solid fa-circle-dot"></i>
             </li>
-            <li><a data-text="Thèmes 3" href="#">Thèmes 3</a></li>
+            <li><a data-text="Innovation" href="innovation.html">Innovation</a></li>
             <li><a data-text="Thèmes 4" href="#">Thèmes 4</a></li>`;
     }
     else if (theme === "themesThree") {
         menu.innerHTML += `
-            <li><a data-text="Thèmes 1" href="history.html">Thèmes 1</a></li>
-            <li><a data-text="Thèmes 2" href="#">Thèmes 2</a></li>
-            <li class="active"><a data-text="Thèmes 3" href="#">Thèmes 3</a></li>
+            <li><a data-text="Histoire" href="history.html">Histoire</a></li>
+            <li><a data-text="Entreprise" href="entreprise.html">Entreprise</a></li>
+            <li><a data-text="Innovation" href="innovation.html">Innovation</a></li>
             <li class="dot-nav">
                 <i id="1" class="fa-solid fa-circle active"></i>
                 <span></span>
@@ -66,9 +66,9 @@ window.addEventListener("DOMContentLoaded", async () => {
     }
     else if (theme === "themesFour") {
         menu.innerHTML += `
-            <li><a data-text="Thèmes 1" href="history.html">Thèmes 1</a></li>
-            <li><a data-text="Thèmes 2" href="#">Thèmes 2</a></li>
-            <li><a data-text="Thèmes 3" href="#">Thèmes 3</a></li>
+            <li><a data-text="Histoire" href="history.html">Histoire</a></li>
+            <li><a data-text="Entreprise" href="entreprise.html">Entreprise</a></li>
+            <li><a data-text="Innovation" href="innovation.html">Innovation</a></li>
             <li class="active"><a data-text="Thèmes 4" href="#">Thèmes 4</a></li>
             <li class="dot-nav">
                 <i id="1" class="fa-solid fa-circle active"></i>
@@ -81,9 +81,9 @@ window.addEventListener("DOMContentLoaded", async () => {
     else {
         // No theme: render a plain nav without dot navigation
         menu.innerHTML += `
-            <li><a data-text="Thèmes 1" href="/themes/theme1/history.html">Thèmes 1</a></li>
-            <li><a data-text="Thèmes 2" href="#">Thèmes 2</a></li>
-            <li><a data-text="Thèmes 3" href="#">Thèmes 3</a></li>
+            <li><a data-text="Histoire" href="/themes/history.html">Histoire</a></li>
+            <li><a data-text="Entreprise" href="/themes/entreprise.html">Entreprise</a></li>
+            <li><a data-text="Innovation" href="/themes/innovation.html">Innovation</a></li>
             <li><a data-text="Thèmes 4" href="#">Thèmes 4</a></li>`;
 
         // Hide the dot-navigation section in the page since there's nothing to paginate

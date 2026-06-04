@@ -1,4 +1,4 @@
-@media (max-width : 1000px) {
+@media (max-width : 1200px) {
 
     #index {
         main {
@@ -19,14 +19,60 @@
     }
     
     #themes {
-        section {
-            max-width: 100%;
 
-            article {
-                padding: 24px;
-                p {
-                    max-width: 80%;
-                }            
+        header {
+            nav {
+                width: 95%;
+                font-size: 0.9rem;
+            }
+        }
+        main {
+            height: 500px;
+            section {
+                max-width: 100%;
+                padding: 96px 0px;
+
+                article {
+                    
+                    padding: 24px;
+                    width: 100%;
+
+                    h2 {
+                        font-size: 1.8rem;
+                    }
+                    p {
+                        max-width: 80%;font-size: 1.2rem;
+                    }            
+                }
+            }
+        }       
+    }
+}
+
+@media (max-width : 700px) {
+
+    #themes {
+
+        main {
+
+            height: 350px;
+            section {
+                max-width: 100%;
+                padding: 96px 0px;
+
+                article {
+                    
+                    padding: 24px;
+                    width: 100%;
+
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+                    p {
+                        max-width: 80%;
+                        font-size: 0.8rem;
+                    }            
+                }
             }
         }       
     }

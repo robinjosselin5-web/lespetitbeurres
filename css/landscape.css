@@ -4,7 +4,7 @@
 }
 
 @media screen and (orientation: portrait) {
-    #index, #biscuit, #themes {
+    #index, #biscuitall, #themes {
         display: none;
     }
 

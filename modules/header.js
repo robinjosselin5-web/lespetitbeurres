@@ -1,3 +1,4 @@
+// fix 2
 export function getHeader(basePath = ".") {
         return `
         <nav>

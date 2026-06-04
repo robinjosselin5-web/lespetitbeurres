@@ -27,7 +27,7 @@ button.addEventListener("click", () => {
         btnState = true;
     } else {
 
-        window.location.href = "../biscuit.html";
+        window.location.href = "biscuit.html";
         btnState = false; // Reset après navigation
     }
 });

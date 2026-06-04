@@ -1,6 +1,6 @@
 #themes {
     position: relative;
-    background-image: url("../img/theme1/cointheme1.png"), url("../img/biscuit/bgmiettes.png");
+    background-image: url("./../img/cointheme1.png"), url("./../img/biscuit/bgmiettes.png");
                       
 
 
@@ -20,14 +20,14 @@
         background-position-x: 80%;
         background-position-y: center;
         background-repeat: no-repeat;
-
+ 
         width: 100%;
         display: flex;
         flex-direction: column;
         margin-bottom: 48px;
 
         h1 {
-            position: absolute;
+            position: absolute; 
             top: 120px;
             left: -10px;
             padding: 10px 28px;

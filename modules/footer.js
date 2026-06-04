@@ -14,7 +14,7 @@ export function getFooter(basePath = ".") {
 
         <section id="footer-brand">
 
-                <a href="/" id="logo">
+                <a href="./../biscuit.html" id="logo">
                 <img src="${basePath}/img/footer/logo.svg" alt="LU">
                 </a>
 

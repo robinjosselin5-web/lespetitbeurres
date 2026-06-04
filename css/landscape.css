@@ -24,7 +24,9 @@
         }
         p {
             margin-bottom: 10vh;
-            font-size: 1.5rem;
+                font-size: 3rem;
+                font-weight: 700;
+                font-family: "Luset-Regular", sans-serif;
             animation: textBounce 0.6s ease-in-out infinite;
             /* animation: textPulse 2.8s ease-in-out infinite; */
         }

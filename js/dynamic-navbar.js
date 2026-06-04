@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
     // Only import theme content if a valid theme is set
     const content = hasTheme
-        ? (await import(`./themes_content/${theme}.js`)).content
+        ? (await import(`../js/themes_content/${theme}.js`)).content
         : null;
 
     let currentPage = 1;
@@ -24,7 +24,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
     if (theme === "themesOne") {
         menu.innerHTML += `
-            <li class="active"><a data-text="Thèmes 1" href="#">Thèmes 1</a></li>
+            <li class="active"><a data-text="Thèmes 1" href="history.html">Thèmes 1</a></li>
             <li class="dot-nav">
                 <i id="1" class="fa-solid fa-circle active"></i>
                 <span></span>
@@ -38,7 +38,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     }
     else if (theme === "themesTwo") {
         menu.innerHTML += `
-            <li><a data-text="Thèmes 1" href="#">Thèmes 1</a></li>
+            <li><a data-text="Thèmes 1" href="history.html">Thèmes 1</a></li>
             <li class="active"><a data-text="Thèmes 2" href="#">Thèmes 2</a></li>
             <li class="dot-nav">
                 <i id="1" class="fa-solid fa-circle active"></i>
@@ -52,7 +52,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     }
     else if (theme === "themesThree") {
         menu.innerHTML += `
-            <li><a data-text="Thèmes 1" href="#">Thèmes 1</a></li>
+            <li><a data-text="Thèmes 1" href="history.html">Thèmes 1</a></li>
             <li><a data-text="Thèmes 2" href="#">Thèmes 2</a></li>
             <li class="active"><a data-text="Thèmes 3" href="#">Thèmes 3</a></li>
             <li class="dot-nav">
@@ -66,7 +66,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     }
     else if (theme === "themesFour") {
         menu.innerHTML += `
-            <li><a data-text="Thèmes 1" href="#">Thèmes 1</a></li>
+            <li><a data-text="Thèmes 1" href="history.html">Thèmes 1</a></li>
             <li><a data-text="Thèmes 2" href="#">Thèmes 2</a></li>
             <li><a data-text="Thèmes 3" href="#">Thèmes 3</a></li>
             <li class="active"><a data-text="Thèmes 4" href="#">Thèmes 4</a></li>
@@ -81,7 +81,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     else {
         // No theme: render a plain nav without dot navigation
         menu.innerHTML += `
-            <li><a data-text="Thèmes 1" href="/themes/template.html">Thèmes 1</a></li>
+            <li><a data-text="Thèmes 1" href="/themes/history.html">Thèmes 1</a></li>
             <li><a data-text="Thèmes 2" href="#">Thèmes 2</a></li>
             <li><a data-text="Thèmes 3" href="#">Thèmes 3</a></li>
             <li><a data-text="Thèmes 4" href="#">Thèmes 4</a></li>`;

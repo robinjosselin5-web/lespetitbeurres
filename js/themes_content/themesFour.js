@@ -1,15 +1,15 @@
 export const content = {
     firstTitle: "Les anciennes publicités et affiches",
-    firstText: `LU a marqué l'histoire de la publicité grâce à ses affiches illustrées diffusées dès la fin du XIXᵉ siècle.
-                Ces créations artistiques mettaient en valeur les biscuits de la marque et contribuaient à renforcer sa notoriété.
-                Certaines affiches sont aujourd'hui considérées comme des œuvres d'art et sont exposées dans des musées.
-                Cette stratégie publicitaire innovante a permis à LU de se distinguer de ses concurrents et de construire une image
-                forte auprès du public..`,
+    firstText: `<strong>LU a marqué l'histoire de la publicité</strong> grâce à ses affiches illustrées diffusées <strong>dès la fin du XIXᵉ siècle.</strong>
+                <strong>Ces créations artistiques</strong> mettaient en valeur les biscuits de la marque et <strong>contribuaient à renforcer sa notoriété.</strong>
+                Certaines affiches sont aujourd'hui <strong>considérées comme des œuvres d'art</strong> et sont exposées dans des musées.
+                <strong>Cette stratégie publicitaire innovante</strong> a permis à <strong>LU</strong> de se distinguer de ses concurrents et de <strong>construire une image
+                forte auprès du public.</strong>`,
     firstBackground: `url(./../img/theme4/publu.png)`,
 
     secondTitle: "Le logo et l'identité visuelle",
-    secondText: `L'identité visuelle de LU repose principalement sur son logo rouge et blanc facilement reconnaissable. Ce logo est
-                 présent sur tous les emballages de la marque et contribue à son identification immédiate par les consommateurs.
+    secondText: `L'identité visuelle de <strong>LU</strong> repose principalement sur son <strong>logo rouge et blanc</strong> facilement reconnaissable. Ce logo est
+                 <strong>présent sur tous les emballages de la marque</strong> et contribue à son identification immédiate par les consommateurs.
                  Au fil du temps, il a évolué tout en conservant ses éléments essentiels. L'entreprise accorde une grande importance
                  à son image afin de transmettre des valeurs de qualité, de tradition et de convivialité associées à ses biscuits.`,
     secondBackground: `url(./../img/theme4/boitelu.png)`,
